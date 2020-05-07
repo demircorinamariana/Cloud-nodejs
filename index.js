@@ -31,7 +31,7 @@ app.use('/', express.static('frontend'))
 //definesc un endoint de tip get la o adresa helo
 
 app.get('/hello', (request, response) => {
-    response.status(200).json({hello: "world"})
+    response.status(200).json({hello: process.env})
 })
 
 app.get('/test',(req,res) => {
@@ -123,4 +123,4 @@ app.delete('/messages/:id', (request, response) => {
     })
 })
 
-app.listen(8080)
+app.listen(process.env.PORT || 8080)
