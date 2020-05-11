@@ -3,21 +3,20 @@
 
 </body>
     <head>
-        <title>Info Companie</title>
-        <h1>Alege o carte dupa tema care iti place!</h1>
+        <title>Hobby</title>
+        <h1 style="color:LightGray;">Alege o carte sau un film dupa subiectul care iti place!</h1>
     </head>
-    
-    <body>
-        <label for="">Tema:</label>
-        <input type="text" name="cui" id="cui" />
-        <button onclick="getInfoCompanie()">Get INFO</button>
-        
+    <body style="background-image: url('books.jpg');">
+        <label style="color:LightGray;" for="">Cuvant cheie:</label>
+        <input type="text" name="info" id="info" />
+        <button onclick="getInfo()">Afla cartea</button>
+        <button onclick="getInfoM()">Afla filmul</button>
         
         <script type="text/javascript">
-            async function getInfoCompanie() {
-                let cui = document.getElementById('cui').value
+            async function getInfo() {
+                let info = document.getElementById('info').value
                 
-                let url = `https://www.googleapis.com/books/v1/volumes?q=${cui}=newest&key=AIzaSyC_jdZ0Pvrwj1WXtL5rcB60J-eRU0prxFw`
+                let url = `https://www.googleapis.com/books/v1/volumes?q=${info}=newest&key=AIzaSyC_jdZ0Pvrwj1WXtL5rcB60J-eRU0prxFw`
                 
                 try {
                     let response = await fetch(url, {
@@ -25,16 +24,39 @@
                     })
                     let data = await response.json()
                     console.log(data)
-                    document.getElementById("response_data").innerHTML = data.items[0].volumeInfo.title;
+                    document.getElementById("response_data").innerHTML = data.items[1].volumeInfo.title;
+                    
+                } catch(err) {
+                    console.log(err)
+                }
+                
+            }
+             async function getInfoM() {
+                let info = document.getElementById('info').value
+                
+                let url = `https://movie-database-imdb-alternative.p.rapidapi.com/?s=${info}`
+                
+                try {
+                    let response = await fetch(url, {
+                       headers: {
+                           "x-rapidapi-host": "movie-database-imdb-alternative.p.rapidapi.com",
+                        	"x-rapidapi-key": "fe90eb8794mshbbb4ff7435b21bcp15f0e3jsnfd61dcebddbf",
+                        	"useQueryString": true
+                        }
+                    })
+                    let data = await response.json()
+                    console.log(data)
+                    document.getElementById("response_data").innerHTML = data.Search[1].Title;
+                    
                 } catch(err) {
                     console.log(err)
                 }
                 
             }
         </script>
-        <div>
+        <div >
            <h1>
-               <span id="response_data">
+               <span style="color:LightGray;" id="response_data">
                    
                </span>
            </h1>
