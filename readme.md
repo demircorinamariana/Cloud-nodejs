@@ -103,7 +103,7 @@ Response :
 }
 ```
 ### Capturi de ecran aplicatie 
-In figura de mai jos se poate observa rezultatul proiectului, o interfata prin care utilizatorul poate sa alega pe baza unui cuvand cheie un film sau o carte.
+In figura de mai jos se poate observa rezultatul proiectului, o interfata prin care utilizatorul poate sa aleaga pe baza unui cuvant cheie,  un film sau o carte.
 ![Pagina Start](pagStart.JPG)
 Figura 1 
 
