@@ -44,35 +44,9 @@ GET https://www.googleapis.com/books/v1/volumes?q=flowers+inauthor:keyes&key=you
     "title": "Flowers",
     "authors": [
      "Vijaya Khisty Bodach"
-    ],
+    ]
+  }
   
-  },
-  {
-   "kind": "books#volume",
-   "id": "RJxWIQOvoZUC",
-   "etag": "NsxMT6kCCVs",
-   "selfLink": "https://www.googleapis.com/books/v1/volumes/RJxWIQOvoZUC",
-   "volumeInfo": {
-    "title": "Flowers",
-    "authors": [
-     "Gail Saunders-Smith"
-    ],
-    
-  },
-  {
-   "kind": "books#volume",
-   "id": "zaRoX10_UsMC",
-   "etag": "pm1sLMgKfMA",
-   "selfLink": "https://www.googleapis.com/books/v1/volumes/zaRoX10_UsMC",
-   "volumeInfo": {
-    "title": "Flowers",
-    "authors": [
-     "Paul McEvoy"
-    ],
-   
-  },
-  "totalItems": 3
-}
 ```
 Exemplu de request/response pentru api-ul IMDb Alternative:
 
@@ -129,4 +103,17 @@ Response :
 }
 ```
 ### Capturi de ecran aplicatie 
+In figura de mai jos se poate observa rezultatul proiectului, o interfata prin care utilizatorul poate sa alega pe baza unui cuvand cheie un film sau o carte.
 ![Pagina Start](pagStart.JPG)
+Figura 1 
+
+Ca si exemplu am folosit cuvantul cheie, drama si voi testa pe rand ce se intampla.
+![Cuvant testat](cuvant.JPG)
+Figura 2
+
+Voi apasa intai pe butonul **Afla cartea**, iar rezultatul poate fi vazut mai jos:
+![Afla cartea](carte.JPG)
+Figura 3
+
+Pentru acelasi cuvant cheie pot alege sa aflu si un film, iar rezultaul este urmatorul:
+![Afla filmul](film.JPG)
