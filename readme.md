@@ -117,3 +117,5 @@ Figura 3
 
 Pentru acelasi cuvant cheie pot alege sa aflu si un film, iar rezultaul este urmatorul:
 ![Afla filmul](film.JPG)
+Figura 4
+
