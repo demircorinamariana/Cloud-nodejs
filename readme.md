@@ -4,18 +4,18 @@ Aceasta aplicatie a fost creata in limbajul HTML si Javascipt si integreaza doua
 ## Descriere problema
 Problema tratata de proiect visezeaza pasionatii de muzica si carti, care nu stiu ce carte sa citeasca sau ce film sa vizioneze. Astfel, aceasta aplicatie le ofera posibilitatea de a alege in functie de un cuvand cheie, o tema favorita, un subiect favorit.
 ## Descriere api 
-API-urile din Familia API Google Books  permit utilizarea unot functii Google Books orice site sau aplicatie.  API Google Books permite efectuarea majoritatii operațiunilor care se pot efectua în mod interactiv pe site-ul web Google Books.
-API-ul de la Google Books ofera acces la multe dintre operațiunile disponibile pe site-ul Google Books. Poate fi utilizat pentru a crea aplicații puternice care asigură o integrare profundă cu Google Books. 
+API-urile din Familia API Google Books permit utilizarea unor functii Google Books pentru crearea de site-uri sau aplicatii.  API Google Books permite efectuarea majoritatii operațiunilor care se pot efectua în mod interactiv pe site-ul web Google Books.
+API-ul de la Google Books ofera acces la multe dintre operațiunile disponibile pe site-ul Google Books. Poate fi utilizat pentru a crea aplicații puternice care asigură o integrare cu Google Books. 
 Unele dintre caracteristicile principale pe care le oferă API sunt:
 
 - cautarea si parcurgerea listei de cărți care se potrivesc cu o anumită caracterstica.
-- vizualizarea informațiilor despre o carte, inclusiv metadate, disponibilitate și preț, link-uri către pagina de previzualizare.
+- vizualizarea informațiilor despre o carte, inclusiv metadate.
 - gestionarea propriilor rafturi de cărți.
 
 Cererile către API-ul Books pentru date publice trebuie să fie însoțite de un identificator, care poate fi un API Key sau un token de acces. Eu am folosit varianta cu API Key.
 
 Al doilea API folosit este  API-ul IMDb Alternative. Acesta primește date din surse precum IMDb și returnează rezultate în format JSON sau XML. Se poate căuta chiar și prin ID IMDb pentru a obține rezultate similare din baza de date IMDb.
-Cererile către API-ul Books pentru date publice trebuie să fie însoțite de un identificator, care poate fi un API Key 
+Cererile către API-ul IMDb Alternative pentru date publice trebuie să fie însoțite de un API Key.
 
 Se pot interoga diferite tipuri de date, inclusiv:
 
