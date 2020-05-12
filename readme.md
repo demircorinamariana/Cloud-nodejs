@@ -45,7 +45,7 @@ GET https://www.googleapis.com/books/v1/volumes?q=flowers+inauthor:keyes&key=you
     "authors": [
      "Vijaya Khisty Bodach"
     ],
-   ...
+  
   },
   {
    "kind": "books#volume",
@@ -57,7 +57,7 @@ GET https://www.googleapis.com/books/v1/volumes?q=flowers+inauthor:keyes&key=you
     "authors": [
      "Gail Saunders-Smith"
     ],
-    ...
+    
   },
   {
    "kind": "books#volume",
@@ -69,7 +69,7 @@ GET https://www.googleapis.com/books/v1/volumes?q=flowers+inauthor:keyes&key=you
     "authors": [
      "Paul McEvoy"
     ],
-    ...
+   
   },
   "totalItems": 3
 }
@@ -129,4 +129,4 @@ Response :
 }
 ```
 ### Capturi de ecran aplicatie 
-![Pagina Start](/server/pagStart.JPG)
+![Pagina Start](/Cloud-nodejs/pagStart.JPG)
