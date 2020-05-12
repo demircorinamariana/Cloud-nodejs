@@ -129,4 +129,4 @@ Response :
 }
 ```
 ### Capturi de ecran aplicatie 
-![Pagina Start](/Cloud-nodejs/pagStart.JPG)
+![Pagina Start](pagStart.JPG)
